@@ -18,8 +18,9 @@ $gridMax: 1366px;
   box-sizing: border-box;
   font-family: $monserrat;
 }
-.container {
+.container-fluid {
   width: 100%;
+  padding: 0;
   header {
     width: 100%;
     display: flex;
@@ -35,7 +36,7 @@ $gridMax: 1366px;
         h1 {
           color: $white;
         }
-        div#menu {
+        button#menu, div#menu {
           display: flex;
           flex-direction: column;
           justify-content: space-evenly;
@@ -70,7 +71,7 @@ $gridMax: 1366px;
       font-family: $largeParaType;
       font-size: $largeParaSize;
     }
-    button {
+    button#shop {
       margin-top: 3.5em;
       padding: 1em 2.5em;
       background-color: transparent;
@@ -321,7 +322,7 @@ $gridMax: 1366px;
 /* wrap each face image into a figure*/
 
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
-  .container {
+  .container-fluid {
     header {
       nav {
         ul#navigation {
@@ -352,7 +353,7 @@ $gridMax: 1366px;
       margin: 3em 100px 0 100px;
       h3,
       p,
-      button,
+      button#shop,
       img {
         margin-left: 20px;
       }
