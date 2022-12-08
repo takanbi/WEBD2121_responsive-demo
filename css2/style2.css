@@ -26,25 +26,6 @@
 }
 
 @media (max-width: 992px) {
-  .navbar-collapse {
-    -ms-flex-preferred-size: 100vh;
-        flex-basis: 100vh;
-    -webkit-box-flex: 1.5;
-        -ms-flex-positive: 1.5;
-            flex-grow: 1.5;
-  }
-  .show, .collapsing {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
   .show .navbar-nav, .collapsing .navbar-nav {
     height: 100vh;
   }
